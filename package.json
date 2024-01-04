@@ -1,0 +1,25 @@
+{
+  "name": "network-graphql-lambda",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "codegen": "graphql-codegen --config codegen.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@apollo/server": "^4.10.0",
+    "@as-integrations/aws-lambda": "^3.1.0",
+    "graphql": "^16.8.1"
+  },
+  "devDependencies": {
+    "@eddeee888/gcg-typescript-resolver-files": "^0.7.2",
+    "@graphql-codegen/cli": "^5.0.0",
+    "serverless": "^3.38.0",
+    "serverless-plugin-typescript": "^2.1.5",
+    "typescript": "^5.3.3"
+  }
+}

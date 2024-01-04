@@ -1,0 +1,15 @@
+type Query {
+	myIp: String!
+	dnsLookup(address: String!): [DnsQueryResult!]
+}
+
+type ARecord {
+	address: String!
+	ttl: Int!
+}
+
+type CName {
+	hostname: String!
+}
+
+union DnsQueryResult = CName | ARecord
